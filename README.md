@@ -1,5 +1,5 @@
 # Astares-Pharo-Extensions
-Useful extensions for Pharo required
+Useful extensions for Pharo by Astares
 
 # Overview 
 ## Quick start
