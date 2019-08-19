@@ -6,7 +6,7 @@ Useful extensions for Pharo required
 
 ```Smalltalk
 Metacello new
-      baseline:'AstaresPharoExtensions';
+      baseline:'AstaresExtensions';
       repository: 'github://astares/Astares-Pharo-Extensions:master/src';
       load
 ```

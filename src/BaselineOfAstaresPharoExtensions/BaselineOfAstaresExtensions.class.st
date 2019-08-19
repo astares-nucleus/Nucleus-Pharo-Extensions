@@ -1,17 +1,17 @@
 Class {
-	#name : #BaselineOfAstaresPharoExtensions,
+	#name : #BaselineOfAstaresExtensions,
 	#superclass : #BaselineOf,
-	#category : #BaselineOfAstaresPharoExtensions
+	#category : #BaselineOfAstaresExtensions
 }
 
 { #category : #baseline }
-BaselineOfAstaresPharoExtensions >> baseline: spec [
+BaselineOfAstaresExtensions >> baseline: spec [
 	<baseline>
 	spec
 		for: #common
 		do: [ 
 			"Packages"
-			spec package: 'Pharo-Extensions'.
+			spec package: 'Astares-Extensions'.
 
 			"Groups"
 			spec
