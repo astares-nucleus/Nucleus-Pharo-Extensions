@@ -15,7 +15,7 @@ BaselineOfAstaresExtensions >> baseline: spec [
 
 			"Groups"
 			spec
-				group: 'Extensions' with: #('Pharo-Extensions');
+				group: 'Extensions' with: #('Astares-Extensions');
 				group: 'default' with: #('Extensions');
 				group: 'all' with: #('Extensions') ]
 ]
