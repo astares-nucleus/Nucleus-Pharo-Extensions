@@ -1,1 +1,1 @@
-Package { #name : #BaselineOfAstaresPharoExtensions }
+Package { #name : #BaselineOfAstaresExtensions }

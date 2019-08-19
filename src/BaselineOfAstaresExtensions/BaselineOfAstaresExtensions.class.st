@@ -1,3 +1,6 @@
+"
+Baseline for useful Astares extensions to Pharo
+"
 Class {
 	#name : #BaselineOfAstaresExtensions,
 	#superclass : #BaselineOf,
@@ -11,11 +14,13 @@ BaselineOfAstaresExtensions >> baseline: spec [
 		for: #common
 		do: [ 
 			"Packages"
-			spec package: 'Astares-Extensions'.
+			spec package: 'Astares-Extensions';
+				  package: 'Astares-Extensions-Tests' with: [ spec requires: #('Astares-Extensions') ].
 
 			"Groups"
 			spec
 				group: 'Extensions' with: #('Astares-Extensions');
-				group: 'default' with: #('Extensions');
+				group: 'Tests' with: #('Astares-Extensions-Tests');
+				group: 'default' with: #('Tests');
 				group: 'all' with: #('Extensions') ]
 ]
