@@ -4,7 +4,7 @@ Tests for Astares Nucleus string extensions.
 Class {
 	#name : #NUCStringExtensionTest,
 	#superclass : #TestCase,
-	#category : #' Nucleus-Pharo-Extensions-Tests-Base'
+	#category : #'Nucleus-Pharo-Extensions-Tests-Base'
 }
 
 { #category : #tests }
