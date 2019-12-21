@@ -1,4 +1,4 @@
-# Astares-Pharo-Extensions
+# Nucleus-Pharo-Extensions
 Useful extensions for Pharo by Astares
 
 # Overview 
