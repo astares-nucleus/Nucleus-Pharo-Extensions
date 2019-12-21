@@ -6,8 +6,8 @@ Useful extensions for Pharo from Nucleus project - provided by Astares.com
 
 ```Smalltalk
 Metacello new
-      baseline:'AstaresExtensions';
-      repository: 'github://astares/Astares-Pharo-Extensions:master/src';
+      baseline:'NucleusPharoExtensions';
+      repository: 'github://astares-nucleus/Nucleus-Pharo-Extensions:master/src';
       load
 ```
 
