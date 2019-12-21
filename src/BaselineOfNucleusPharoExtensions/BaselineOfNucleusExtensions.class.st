@@ -20,7 +20,7 @@ BaselineOfNucleusPharoExtensions >> baseline: spec [
 			"Groups"
 			spec
 				group: 'Core' with: #('Nucleus-Pharo-Extensions');
-				group: 'Tests' with: #('Nucleus-Pharo-Extensions-Testss');
+				group: 'Tests' with: #('Nucleus-Pharo-Extensions-Tests');
 				group: 'default' with: #('all');
 				group: 'all' with: #('Core' 'Tests') ]
 ]
