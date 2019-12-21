@@ -1,5 +1,5 @@
 # Nucleus-Pharo-Extensions
-Useful extensions for Pharo by Astares
+Useful extensions for Pharo from Nucleus project - provided by Astares.com
 
 # Overview 
 ## Quick start
