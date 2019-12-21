@@ -1,1 +1,1 @@
-Package { #name : #'Astares-Extensions-Tests' }
+Package { #name : #'Nucleus-Pharo-Extensions-Tests' }
