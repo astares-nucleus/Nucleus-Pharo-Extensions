@@ -1,12 +1,12 @@
 Extension { #name : #String }
 
-{ #category : #'*Astares-Extensions' }
+{ #category : #'*Nucleus-Pharo-Extensions' }
 String >> isAllUppercase [
 
 	^self allSatisfy: [:each | each isUppercase ]
 ]
 
-{ #category : #'*Astares-Extensions' }
+{ #category : #'*Nucleus-Pharo-Extensions' }
 String >> withBlanksRemoved [
 	^self copyReplaceAll: ' ' with: '' 
 ]

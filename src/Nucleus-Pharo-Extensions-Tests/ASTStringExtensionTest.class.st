@@ -1,21 +1,21 @@
 "
-Tests for Astares string extensions.
+Tests for Astares Nucleus string extensions.
 "
 Class {
-	#name : #ASTStringExtensionTest,
+	#name : #NUCStringExtensionTest,
 	#superclass : #TestCase,
-	#category : #'Astares-Extensions-Tests-Base'
+	#category : #' Nucleus-Pharo-Extensions-Tests-Base'
 }
 
 { #category : #tests }
-ASTStringExtensionTest >> testIsAllUppercase [
+NUCStringExtensionTest >> testIsAllUppercase [
 
 	self assert: 'HELLOWORLD' isAllUppercase.
 	self deny: 'HELLOwORLD' isAllUppercase
 ]
 
 { #category : #tests }
-ASTStringExtensionTest >> testWithBlanksRemoved [
+NUCStringExtensionTest >> testWithBlanksRemoved [
 
 	self assert: ' Hell o World' withBlanksRemoved equals: 'HelloWorld'
 ]
