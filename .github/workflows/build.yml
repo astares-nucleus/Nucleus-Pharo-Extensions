@@ -1,0 +1,34 @@
+name: Build
+
+on: [push,pull_request,workflow_dispatch]
+
+jobs:
+   build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        smalltalk: [ Pharo64-13 ]
+    name: ${{ matrix.smalltalk }}
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup SSH Keys and known_hosts 
+        uses: webfactory/ssh-agent@v0.5.4 
+        with: 
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Set up Smalltalk CI
+        uses: hpi-swa/setup-smalltalkCI@v1
+        with:
+          smalltalk-image: ${{ matrix.smalltalk }}
+      - name: Load Image and Run Tests
+        run: smalltalkci -s ${{ matrix.smalltalk }} .smalltalkci/.unit-tests.ston
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        timeout-minutes: 15
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v5
+        with:
+          name: ${{matrix.os}}-${{matrix.smalltalk}}      
+          token: ${{ secrets.CODECOV_TOKEN }}
+          slug: astares-nucleus/Nucleus-Pharo-Extensions
