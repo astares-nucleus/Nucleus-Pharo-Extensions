@@ -1,5 +1,7 @@
 "
-Baseline for useful extensions to Pharo used in Astares Nucleus project
+Baseline for [Nucleus-Pharo-Extensions](https://github.com/astares-nucleus/Nucleus-Core) for the [Nucleus](https://github.com/astares-nucleus/Nucleus) platform
+
+(c) 2019-2025 by [astares.com](http://www.astares.com)
 "
 Class {
 	#name : #BaselineOfNucleusPharoExtensions,
@@ -7,7 +9,7 @@ Class {
 	#category : #BaselineOfNucleusPharoExtensions
 }
 
-{ #category : #baseline }
+{ #category : #baselines }
 BaselineOfNucleusPharoExtensions >> baseline: spec [
 	<baseline>
 	spec
@@ -21,6 +23,7 @@ BaselineOfNucleusPharoExtensions >> baseline: spec [
 			spec
 				group: 'Core' with: #('Nucleus-Pharo-Extensions');
 				group: 'Tests' with: #('Nucleus-Pharo-Extensions-Tests');
+				group: 'CI' with: #('Tests');
 				group: 'default' with: #('all');
 				group: 'all' with: #('Core' 'Tests') ]
 ]
